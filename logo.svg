@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue B shape -->
+  <g>
+    <!-- Vertical bar -->
+    <rect x="40" y="30" width="30" height="140" fill="#0066FF" rx="4"/>
+    
+    <!-- Top curve -->
+    <path d="M 70 30 Q 100 30, 100 60 Q 70 80, 70 90 L 70 30" fill="#0066FF"/>
+    
+    <!-- Bottom curve -->
+    <path d="M 70 100 Q 100 100, 100 135 Q 70 155, 70 165 L 70 100" fill="#0066FF"/>
+  </g>
+</svg>

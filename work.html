@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Work — BCREATIVE STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo"><img src="assets/logo.svg" alt="BCREATIVE STUDIO" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="members/login.html" class="nav-cta">Members</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="section-tag" data-reveal>SELECTED WORKS</p>
+    <h1 class="page-title" data-reveal>The <em>Catalog</em>.</h1>
+    <p class="page-lead" data-reveal>A growing archive of vertical series produced and conceived in-house.</p>
+  </div>
+</section>
+
+<!-- Filter -->
+<section class="filter-bar">
+  <div class="container">
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="drama">Drama</button>
+      <button class="filter" data-filter="thriller">Thriller</button>
+      <button class="filter" data-filter="doc">Documentary</button>
+      <button class="filter" data-filter="brand">Brand</button>
+    </div>
+  </div>
+</section>
+
+<!-- Work Showcase — vertical phone grid -->
+<section class="section work-showcase">
+  <div class="container">
+    <div class="phone-grid">
+
+      <div class="phone-item" data-category="thriller" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-1">
+            <span class="phone-tag">THRILLER</span>
+            <h3>MIDNIGHT RUN</h3>
+            <span class="phone-meta">12 EP · 2024</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>Midnight Run</h4>
+          <p>A hacker. A countdown. One vertical chase.</p>
+        </div>
+      </div>
+
+      <div class="phone-item" data-category="drama" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-2">
+            <span class="phone-tag">DRAMA</span>
+            <h3>SOFT LIGHT</h3>
+            <span class="phone-meta">8 EP · 2024</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>Soft Light</h4>
+          <p>Two strangers. One rooftop. A whole city.</p>
+        </div>
+      </div>
+
+      <div class="phone-item" data-category="doc" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-3">
+            <span class="phone-tag">DOC</span>
+            <h3>OFFLINE</h3>
+            <span class="phone-meta">6 EP · 2023</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>Offline</h4>
+          <p>The people who walked away from the internet.</p>
+        </div>
+      </div>
+
+      <div class="phone-item" data-category="drama" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-4">
+            <span class="phone-tag">ROMANCE</span>
+            <h3>NEON HEART</h3>
+            <span class="phone-meta">10 EP · 2024</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>Neon Heart</h4>
+          <p>Tokyo love stories, told one minute at a time.</p>
+        </div>
+      </div>
+
+      <div class="phone-item" data-category="brand" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-5">
+            <span class="phone-tag">BRAND</span>
+            <h3>NORTH/SOUTH</h3>
+            <span class="phone-meta">5 EP · 2023</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>North/South</h4>
+          <p>A branded series for Atlas Outdoors.</p>
+        </div>
+      </div>
+
+      <div class="phone-item" data-category="thriller" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-6">
+            <span class="phone-tag">THRILLER</span>
+            <h3>FAULT LINE</h3>
+            <span class="phone-meta">7 EP · 2025</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>Fault Line</h4>
+          <p>An earthquake. A missing sister. A timer.</p>
+        </div>
+      </div>
+
+      <div class="phone-item" data-category="doc" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-7">
+            <span class="phone-tag">DOC</span>
+            <h3>THE QUIET ONES</h3>
+            <span class="phone-meta">4 EP · 2024</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>The Quiet Ones</h4>
+          <p>Portraits of monks, hermits and night-shift workers.</p>
+        </div>
+      </div>
+
+      <div class="phone-item" data-category="brand" data-reveal>
+        <div class="phone-frame">
+          <div class="phone-screen-lg gradient-8">
+            <span class="phone-tag">BRAND</span>
+            <h3>RUN WILD</h3>
+            <span class="phone-meta">3 EP · 2025</span>
+          </div>
+        </div>
+        <div class="phone-info">
+          <h4>Run Wild</h4>
+          <p>A branded sports series for Stratus Athletics.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><h3>BCREATIVE<span class="grad-text">.</span></h3><p>Vertical cinema, reimagined.</p></div>
+      <div class="footer-cols">
+        <div><h4>Studio</h4><a href="about.html">About</a><a href="work.html">Work</a><a href="services.html">Services</a></div>
+        <div><h4>Connect</h4><a href="contact.html">Contact</a><a href="#">Instagram</a><a href="#">Vimeo</a></div>
+        <div><h4>Access</h4><a href="members/login.html">Members Portal</a><a href="#">Press Kit</a></div>
+      </div>
+    </div>
+    <div class="footer-bot"><p>© 2025 BCREATIVE STUDIO. All rights reserved.</p><p>Crafted vertically.</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

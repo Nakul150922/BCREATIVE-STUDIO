@@ -1,0 +1,74 @@
+<svg viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Main blue gradient matching the real logo -->
+    <linearGradient id="bGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C8FF;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#0088FF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0044DD;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Highlight gradient for 3D sheen -->
+    <linearGradient id="bSheen" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" style="stop-color:#60E0FF;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#0044DD;stop-opacity:0"/>
+    </linearGradient>
+    <!-- Text blue gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00C8FF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0066FF;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular dark background badge -->
+  <circle cx="40" cy="40" r="38" fill="#111111"/>
+
+  <!-- === The stylized "b" letter === -->
+  <!-- Vertical stem of b -->
+  <path d="M 22 14 L 22 62 Q 22 66 26 66 L 30 66 Q 34 66 34 62 L 34 44
+           Q 40 48 47 48 Q 62 48 62 34 Q 62 20 47 20 Q 40 20 34 24 L 34 18
+           Q 34 14 30 14 Z" fill="url(#bGrad)"/>
+
+  <!-- Lower circle of b (the bowl) -->
+  <path d="M 34 44 Q 34 60 47 60 Q 62 60 62 48 Q 62 48 62 48 L 62 34
+           Q 62 48 47 48 Q 40 48 34 44 Z" fill="url(#bGrad)" opacity="0.0"/>
+
+  <!-- The actual b shape - clean path -->
+  <!-- Stem -->
+  <rect x="22" y="14" width="12" height="52" rx="6" fill="url(#bGrad)"/>
+  <!-- Upper bowl -->
+  <path d="M 28 22 Q 28 22 42 22 Q 58 22 58 34 Q 58 46 42 46 L 28 46 Z" fill="url(#bGrad)"/>
+  <!-- Lower bowl -->
+  <path d="M 28 40 Q 28 40 42 40 Q 60 40 60 52 Q 60 64 42 64 L 28 64 Z" fill="url(#bGrad)"/>
+  <!-- Diagonal slash (the 'k' style cut) -->
+  <line x1="60" y1="22" x2="28" y2="46" stroke="#111111" stroke-width="4.5"/>
+
+  <!-- Sheen overlay for 3D look -->
+  <path d="M 22 14 L 22 44 Q 28 40 34 38 L 34 14 Z" fill="url(#bSheen)" opacity="0.6"/>
+
+  <!-- === Text: b.creative === -->
+  <!-- 'b' in blue -->
+  <text x="88" y="42" 
+        font-family="'Helvetica Neue', Arial, sans-serif" 
+        font-size="26" font-weight="800" 
+        fill="url(#textGrad)" letter-spacing="-0.5">b</text>
+  <!-- dot in blue -->
+  <text x="102" y="42"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="26" font-weight="800"
+        fill="url(#textGrad)">.</text>
+  <!-- creative in white -->
+  <text x="110" y="42"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="26" font-weight="700"
+        fill="#FFFFFF" letter-spacing="-0.3">creative</text>
+
+  <!-- === Text: — STUDIO — === -->
+  <!-- Left dash -->
+  <rect x="88" y="52" width="14" height="1.5" fill="#AAAAAA"/>
+  <!-- STUDIO -->
+  <text x="107" y="58"
+        font-family="'Helvetica Neue', Arial, sans-serif"
+        font-size="10" font-weight="500"
+        fill="#CCCCCC" letter-spacing="4">STUDIO</text>
+  <!-- Right dash -->
+  <rect x="202" y="52" width="14" height="1.5" fill="#AAAAAA"/>
+</svg>

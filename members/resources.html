@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Resources — BCREATIVE Members</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/members.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="members-body">
+
+<div class="grain grain-dark"></div>
+
+<aside class="member-side">
+  <a href="../index.html" class="side-brand">B<span class="brand-dot">.</span></a>
+  <nav class="side-nav">
+    <a href="dashboard.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.6"/></svg><span>Overview</span></a>
+    <a href="projects.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h12" stroke="currentColor" stroke-width="1.6"/></svg><span>Projects</span></a>
+    <a href="resources.html" class="active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.6"/></svg><span>Resources</span></a>
+  </nav>
+  <div class="side-bot"><button id="logoutBtn" class="logout-btn">Sign out</button></div>
+</aside>
+
+<main class="member-main">
+  <header class="member-top">
+    <div>
+      <p class="top-greeting">Studio Library</p>
+      <h1>Resources</h1>
+    </div>
+    <div class="top-actions">
+      <input type="search" placeholder="Search files…" class="search-input">
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <section class="res-categories">
+    <div class="res-cat">
+      <div class="res-icon">📄</div>
+      <h4>Scripts</h4>
+      <p>24 documents</p>
+    </div>
+    <div class="res-cat">
+      <div class="res-icon">🎬</div>
+      <h4>Rough Cuts</h4>
+      <p>17 videos</p>
+    </div>
+    <div class="res-cat">
+      <div class="res-icon">🎨</div>
+      <h4>Brand Assets</h4>
+      <p>56 files</p>
+    </div>
+    <div class="res-cat">
+      <div class="res-icon">🎵</div>
+      <h4>Music Library</h4>
+      <p>112 tracks</p>
+    </div>
+  </section>
+
+  <!-- Recent files -->
+  <section class="member-block">
+    <div class="block-head">
+      <h2>Recently shared</h2>
+      <a href="#" class="block-link">Browse all →</a>
+    </div>
+
+    <div class="file-table">
+      <div class="file-thead">
+        <span>Name</span>
+        <span>Project</span>
+        <span>Type</span>
+        <span>Updated</span>
+        <span></span>
+      </div>
+      <div class="file-row">
+        <span class="f-name"><span class="f-icon">📄</span> Midnight_Run_EP08_v3.pdf</span>
+        <span>Midnight Run</span>
+        <span>Script</span>
+        <span>2h ago</span>
+        <span><a href="#" class="dl-btn">Download</a></span>
+      </div>
+      <div class="file-row">
+        <span class="f-name"><span class="f-icon">🎬</span> SoftLight_RoughCut_v1.mp4</span>
+        <span>Soft Light</span>
+        <span>Video</span>
+        <span>Yesterday</span>
+        <span><a href="#" class="dl-btn">Download</a></span>
+      </div>
+      <div class="file-row">
+        <span class="f-name"><span class="f-icon">🎨</span> NeonHeart_Lookbook.pdf</span>
+        <span>Neon Heart</span>
+        <span>Design</span>
+        <span>2 days ago</span>
+        <span><a href="#" class="dl-btn">Download</a></span>
+      </div>
+      <div class="file-row">
+        <span class="f-name"><span class="f-icon">🎵</span> Score_Reference_Set.zip</span>
+        <span>Offline S2</span>
+        <span>Audio</span>
+        <span>4 days ago</span>
+        <span><a href="#" class="dl-btn">Download</a></span>
+      </div>
+      <div class="file-row">
+        <span class="f-name"><span class="f-icon">📄</span> Production_Bible_v2.pdf</span>
+        <span>Fault Line</span>
+        <span>Document</span>
+        <span>1 week ago</span>
+        <span><a href="#" class="dl-btn">Download</a></span>
+      </div>
+      <div class="file-row">
+        <span class="f-name"><span class="f-icon">🎬</span> NorthSouth_Final_Master.mov</span>
+        <span>North/South</span>
+        <span>Video</span>
+        <span>2 weeks ago</span>
+        <span><a href="#" class="dl-btn">Download</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Announcements -->
+  <section class="member-block">
+    <div class="block-head">
+      <h2>Studio Announcements</h2>
+    </div>
+    <div class="announce-list">
+      <article class="announce">
+        <span class="announce-tag">UPDATE</span>
+        <h4>New vertical lens kit arriving Nov 15</h4>
+        <p>Cooke S7/i full-frame primes rated for 9:16 cropping. Bookable through the gear calendar.</p>
+        <span class="announce-date">3 days ago</span>
+      </article>
+      <article class="announce">
+        <span class="announce-tag">EVENT</span>
+        <h4>Members screening — Neon Heart finale</h4>
+        <p>Thursday Nov 21 at 7pm. The Vine St. screening room. RSVP via studio email.</p>
+        <span class="announce-date">1 week ago</span>
+      </article>
+      <article class="announce">
+        <span class="announce-tag">POLICY</span>
+        <h4>Updated file delivery standards</h4>
+        <p>9:16 deliverables now standardized to ProRes 422 HQ at 1080×1920. Full doc in resources.</p>
+        <span class="announce-date">2 weeks ago</span>
+      </article>
+    </div>
+  </section>
+</main>
+
+<script src="../js/auth.js"></script>
+<script src="../js/members.js"></script>
+</body>
+</html>

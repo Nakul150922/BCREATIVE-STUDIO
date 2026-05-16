@@ -1,0 +1,109 @@
+/* ============================================================
+   BCREATIVE STUDIO — Responsive Adjustments
+   Mobile-first overrides for public site
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .work-grid { grid-template-columns: repeat(2, 1fr); }
+  .phone-grid { grid-template-columns: repeat(3, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .values-grid { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .nav-container { padding: 0 1.2rem; }
+  .nav-links {
+    position: fixed; top: 70px; right: -100%;
+    flex-direction: column;
+    background: rgba(10,10,12,0.96); backdrop-filter: blur(20px);
+    width: 80%; height: calc(100vh - 70px);
+    padding: 3rem 2rem; gap: 1.5rem;
+    transition: right .4s var(--ease);
+    border-left: 1px solid var(--line);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { font-size: 1.1rem; }
+  .menu-toggle { display: flex; z-index: 101; }
+
+  .container { padding: 0 1.2rem; }
+  .section { padding: 5rem 0; }
+
+  .hero { padding: 7rem 1.2rem 3rem; min-height: 90vh; }
+  .hero-title { font-size: clamp(2.5rem, 13vw, 5rem); }
+  .hero-sub { font-size: 0.98rem; }
+  .hero-cta { flex-direction: column; align-items: stretch; width: 100%; max-width: 280px; margin: 0 auto; }
+  .btn { justify-content: center; padding: 0.95rem 1.4rem; font-size: 0.78rem; }
+
+  .phone { width: 90px; height: 180px; }
+  .phone-1, .phone-3 { display: none; }
+  .phone-2 { top: 70%; left: 50%; transform: translateX(-50%) rotate(-4deg); opacity: 0.25; }
+
+  .split { grid-template-columns: 1fr; gap: 2rem; }
+  .section-title { font-size: clamp(2rem, 9vw, 3.5rem); }
+  .section-head { margin-bottom: 2.5rem; }
+
+  .work-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .work-card { aspect-ratio: 9/12; max-width: 360px; margin: 0 auto; width: 100%; }
+
+  .phone-grid { grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+  .phone-screen-lg { padding: 1rem; }
+  .phone-screen-lg h3 { font-size: 1.2rem; }
+
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .team-img { font-size: 2.5rem; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .stat-num { font-size: clamp(2.5rem, 12vw, 4rem); }
+
+  .service-row {
+    grid-template-columns: 1fr; gap: 0.8rem;
+    padding: 1.8rem 0;
+  }
+  .service-row:hover { padding-left: 0; }
+  .service-num { font-size: 1.8rem; }
+  .service-content h3 { font-size: 1.5rem; }
+  .service-tags { justify-self: start; }
+
+  .process-grid { grid-template-columns: 1fr; }
+
+  .cta-box { padding: 3rem 1.5rem; }
+  .cta-box h2 { font-size: clamp(2rem, 8vw, 3rem); }
+
+  .page-hero { padding: 9rem 0 3rem; }
+  .page-title { font-size: clamp(2.5rem, 11vw, 4rem); }
+
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .contact-form { padding: 1.8rem 1.4rem; }
+  .big-link { font-size: 1.3rem; }
+
+  .filters { gap: 0.4rem; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 0.5rem; }
+  .filter { white-space: nowrap; flex-shrink: 0; font-size: 0.75rem; padding: 0.5rem 1rem; }
+
+  .footer-cols { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .footer-bot { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  .nav-links { width: 100%; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .phone-grid { grid-template-columns: 1fr; max-width: 280px; margin: 0 auto; }
+  .footer-cols { grid-template-columns: 1fr; }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-shape, .orb, .phone, .marquee-track, .status-dot { animation: none !important; }
+}

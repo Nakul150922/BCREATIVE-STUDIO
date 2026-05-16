@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — BCREATIVE Members</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/members.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="members-body">
+
+<div class="grain grain-dark"></div>
+
+<aside class="member-side">
+  <a href="../index.html" class="side-brand">B<span class="brand-dot">.</span></a>
+  <nav class="side-nav">
+    <a href="dashboard.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="1.6"/></svg><span>Overview</span></a>
+    <a href="projects.html" class="active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h12" stroke="currentColor" stroke-width="1.6"/></svg><span>Projects</span></a>
+    <a href="resources.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.6"/></svg><span>Resources</span></a>
+  </nav>
+  <div class="side-bot"><button id="logoutBtn" class="logout-btn">Sign out</button></div>
+</aside>
+
+<main class="member-main">
+  <header class="member-top">
+    <div>
+      <p class="top-greeting">All Productions</p>
+      <h1>Projects</h1>
+    </div>
+    <div class="top-actions">
+      <input type="search" placeholder="Search projects…" class="search-input">
+    </div>
+  </header>
+
+  <!-- Filter chips -->
+  <div class="chip-row">
+    <button class="chip active">All</button>
+    <button class="chip">Active</button>
+    <button class="chip">In Post</button>
+    <button class="chip">Filming</button>
+    <button class="chip">Delivered</button>
+    <button class="chip">Archived</button>
+  </div>
+
+  <div class="proj-cards">
+    <article class="proj-card">
+      <div class="proj-card-img gradient-1"><span class="proj-card-num">/01</span></div>
+      <div class="proj-card-body">
+        <span class="proj-card-tag">Thriller · 12 EP</span>
+        <h3>Midnight Run</h3>
+        <p>Currently in post-production. 8 of 12 episodes edited.</p>
+        <div class="bar"><span style="width:72%"></span></div>
+        <div class="card-row"><span>Lead: Bharat</span><span class="proj-status active">Active</span></div>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-card-img gradient-2"><span class="proj-card-num">/02</span></div>
+      <div class="proj-card-body">
+        <span class="proj-card-tag">Drama · 8 EP</span>
+        <h3>Soft Light</h3>
+        <p>Production block 2 of 3 underway in LA.</p>
+        <div class="bar"><span style="width:45%"></span></div>
+        <div class="card-row"><span>Lead: Bharat</span><span class="proj-status filming">Filming</span></div>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-card-img gradient-3"><span class="proj-card-num">/03</span></div>
+      <div class="proj-card-body">
+        <span class="proj-card-tag">Doc · 6 EP</span>
+        <h3>Offline S2</h3>
+        <p>Story bibles complete. Casting begins next week.</p>
+        <div class="bar"><span style="width:20%"></span></div>
+        <div class="card-row"><span>Lead: Bharat</span><span class="proj-status dev">Development</span></div>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-card-img gradient-4"><span class="proj-card-num">/04</span></div>
+      <div class="proj-card-body">
+        <span class="proj-card-tag">Romance · 10 EP</span>
+        <h3>Neon Heart</h3>
+        <p>Final color and sound mix in progress. Delivery imminent.</p>
+        <div class="bar"><span style="width:95%"></span></div>
+        <div class="card-row"><span>Lead: Bharat</span><span class="proj-status delivery">Delivery</span></div>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-card-img gradient-5"><span class="proj-card-num">/05</span></div>
+      <div class="proj-card-body">
+        <span class="proj-card-tag">Brand · 5 EP</span>
+        <h3>North/South</h3>
+        <p>Delivered to Atlas Outdoors. Now in public release window.</p>
+        <div class="bar"><span style="width:100%"></span></div>
+        <div class="card-row"><span>Lead: Bharat</span><span class="proj-status delivery">Delivered</span></div>
+      </div>
+    </article>
+
+    <article class="proj-card">
+      <div class="proj-card-img gradient-6"><span class="proj-card-num">/06</span></div>
+      <div class="proj-card-body">
+        <span class="proj-card-tag">Thriller · 7 EP</span>
+        <h3>Fault Line</h3>
+        <p>Greenlit. Pre-production scheduled for Q1.</p>
+        <div class="bar"><span style="width:10%"></span></div>
+        <div class="card-row"><span>Lead: Bharat</span><span class="proj-status dev">Development</span></div>
+      </div>
+    </article>
+  </div>
+</main>
+
+<script src="../js/auth.js"></script>
+<script src="../js/members.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Members · Sign In — BCREATIVE STUDIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/members.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="members-body login-body">
+
+<div class="grain grain-dark"></div>
+
+<!-- Animated bg -->
+<div class="login-bg">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<a href="../index.html" class="login-back">← Back to bcreative.studio</a>
+
+<main class="login-wrap">
+  <div class="login-card">
+    <div class="login-head">
+      <span class="brand-mark">B<span class="brand-dot">.</span></span>
+      <p class="login-eyebrow">MEMBERS PORTAL</p>
+      <h1>Welcome <em>back</em>.</h1>
+      <p class="login-sub">Private access for collaborators, clients & talent.</p>
+    </div>
+
+    <form class="login-form" id="loginForm">
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@studio.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <div class="login-options">
+        <label class="checkbox"><input type="checkbox" id="remember"><span>Remember me</span></label>
+        <a href="#" class="forgot">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn btn-gold">
+        <span>Enter Portal</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>
+      </button>
+      <p class="login-error" id="loginError"></p>
+    </form>
+
+    <div class="login-foot">
+      <p>Not a member yet? <a href="../contact.html">Request access →</a></p>
+      <p class="hint">Demo: <code>bharat@bcreative.studio</code> / <code>bharat2024</code></p>
+    </div>
+  </div>
+</main>
+
+<script src="../js/auth.js"></script>
+</body>
+</html>
